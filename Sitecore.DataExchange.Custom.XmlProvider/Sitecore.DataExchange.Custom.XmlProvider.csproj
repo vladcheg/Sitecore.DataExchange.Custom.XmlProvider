@@ -38,6 +38,10 @@
       <HintPath>..\..\..\wwwroot\dataexchange\Website\bin\Sitecore.DataExchange.DataAccess.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.Services.Core">
+      <HintPath>..\..\..\wwwroot\dataexchange\Website\bin\Sitecore.Services.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,8 +52,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converters\Endpoints\XmlFileEndpointConverter.cs" />
+    <Compile Include="Extensions\EndpointExtensions.cs" />
+    <Compile Include="Models\ItemModels\Endpoints\XmlFileEndpointItemModel.cs" />
+    <Compile Include="Plugins\XmlFileSettings.cs" />
+    <Compile Include="Processors\PipelineSteps\ReadXmlFileStepProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
