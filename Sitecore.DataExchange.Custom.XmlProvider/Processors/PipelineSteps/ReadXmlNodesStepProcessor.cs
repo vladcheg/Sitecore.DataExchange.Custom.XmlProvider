@@ -11,7 +11,7 @@
     using Plugins;
 
     [RequiredEndpointPlugins(typeof(XmlFileSettings))]
-    public class ReadXmlFileStepProcessor : BaseReadDataStepProcessor
+    public class ReadXmlNodesStepProcessor : BaseReadDataStepProcessor
     {
         protected override void ReadData(Endpoint endpoint, PipelineStep pipelineStep, PipelineContext pipelineContext)
         {

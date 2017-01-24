@@ -3,7 +3,6 @@
     using Attributes;
     using DataExchange.Converters.Endpoints;
     using DataExchange.Models;
-    using Models;
     using Models.ItemModels.Endpoints;
     using Plugins;
     using Repositories;
