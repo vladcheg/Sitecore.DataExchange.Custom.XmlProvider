@@ -5,13 +5,13 @@
 
     public static class EndpointExtensions
     {
-        public static XmlFileSettings GetTextFileSettings(this Endpoint endpoint)
+        public static XmlFileSettings GetXmlFileSettings(this Endpoint endpoint)
         {
             return endpoint.GetPlugin<XmlFileSettings>();
         }
         public static bool HasXmlFileSettings(this Endpoint endpoint)
         {
-            return GetTextFileSettings(endpoint) != null;
+            return GetXmlFileSettings(endpoint) != null;
         }
     }
 }

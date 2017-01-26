@@ -1,6 +1,5 @@
 ﻿namespace Sitecore.DataExchange.Custom.XmlProvider.Processors.PipelineSteps
 {
-    using System;
     using System.Xml;
     using Attributes;
     using Contexts;
@@ -11,35 +10,42 @@
     using Plugins;
 
     [RequiredEndpointPlugins(typeof(XmlFileSettings))]
+    [RequiredPipelineStepPlugins(typeof(XmlNodesFiltersSettings))]
     public class ReadXmlNodesStepProcessor : BaseReadDataStepProcessor
     {
         protected override void ReadData(Endpoint endpoint, PipelineStep pipelineStep, PipelineContext pipelineContext)
         {
             var logger = pipelineContext.PipelineBatchContext.Logger;
-            var textFileSettings = endpoint.GetTextFileSettings();
-            if (textFileSettings == null)
+            var xmlFileSettings = endpoint.GetXmlFileSettings();
+            if (xmlFileSettings == null)
             {
                 return;
             }
-            if (string.IsNullOrWhiteSpace(textFileSettings.Path))
+            if (string.IsNullOrWhiteSpace(xmlFileSettings.Path))
             {
                 logger.Error($"No path is specified on the endpoint. (pipeline step: {pipelineStep.Name}, endpoint: {endpoint.Name})");
+                return;
+            }
+
+            var xmlNodesFiltersSettings = pipelineStep.GetXmlNodesFiltersSettings();
+            if (xmlNodesFiltersSettings == null)
+            {
+                //TODO: write to log
                 return;
             }
 
             var xmlDocument = new XmlDocument();
             try
             {
-                xmlDocument.Load(textFileSettings.Path);
+                xmlDocument.Load(xmlFileSettings.Path);
             }
             catch (XmlException ex)
             {
-                logger.Error($"Cannot load xml file. (path: {textFileSettings.Path}, pipeline step: {pipelineStep.Name}, endpoint: {endpoint.Name}, errorMessage: {ex.Message})");
+                logger.Error($"Cannot load xml file. (path: {xmlFileSettings.Path}, pipeline step: {pipelineStep.Name}, endpoint: {endpoint.Name}, errorMessage: {ex.Message})");
                 return;
             }
 
-            //TODO: Get xpath from plugin
-            var xmlNodeList = xmlDocument.SelectNodes("/Contacts/Contact");
+            var xmlNodeList = xmlDocument.SelectNodes(xmlNodesFiltersSettings.XPath);
             var iterableDataSettings = new IterableDataSettings(xmlNodeList);
             pipelineContext.Plugins.Add(iterableDataSettings);
         }

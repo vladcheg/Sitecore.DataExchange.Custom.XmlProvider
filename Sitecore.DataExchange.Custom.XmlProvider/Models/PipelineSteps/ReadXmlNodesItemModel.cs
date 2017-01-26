@@ -4,5 +4,6 @@
     public class ReadXmlNodesItemModel : ItemModel
     {
         public const string EndpointFrom = "EndpointFrom";
+        public const string XPath = "XPath";
     }
 }

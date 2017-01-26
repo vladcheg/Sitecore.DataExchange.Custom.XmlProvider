@@ -5,6 +5,8 @@
     using DataExchange.Models;
     using DataExchange.Plugins;
     using Models.PipelineSteps;
+    using Plugins;
+    using Queues;
     using Repositories;
     using Services.Core.Model;
 
@@ -22,7 +24,14 @@
                 EndpointFrom = base.ConvertReferenceToModel<Endpoint>(source, ReadXmlNodesItemModel.EndpointFrom)
             };
 
+            var xmlNodesFiltersSettings = new XmlNodesFiltersSettings()
+            {
+                XPath = base.GetStringValue(source, ReadXmlNodesItemModel.XPath),
+            };
+
+
             pipelineStep.Plugins.Add(endpointSettings);
+            pipelineStep.Plugins.Add(xmlNodesFiltersSettings);
         }
     }
 }
