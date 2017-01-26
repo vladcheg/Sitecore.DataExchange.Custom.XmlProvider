@@ -8,8 +8,7 @@
     using Repositories;
     using Services.Core.Model;
 
-    //TODO: Add supported Id
-    [SupportedIds("")]
+    [SupportedIds("{391516D3-BE29-4985-A630-8C6242C5A119}")]
     public class XmlFileEndpointConverter : BaseEndpointConverter<ItemModel>
     {
         public XmlFileEndpointConverter(IItemModelRepository repository) : base(repository)

@@ -1,0 +1,52 @@
+----item----
+version: 1
+id: {B4218FEA-A9E2-46EB-9C73-E47756A76FB3}
+database: master
+path: /sitecore/templates/Data Exchange/Providers/Xml/Endpoints/Xml File Endpoint/__Standard Values
+parent: {391516D3-BE29-4985-A630-8C6242C5A119}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {391516D3-BE29-4985-A630-8C6242C5A119}
+templatekey: Xml File Endpoint
+created: 20170126T101956:636210227966600000
+
+----field----
+field: {3C7F78CC-0C5C-4076-80EF-9A49FDA5FF96}
+name: ConverterType
+key: convertertype
+content-length: 128
+
+Sitecore.DataExchange.Custom.XmlProvider.Converters.Endpoints.XmlFileEndpointConverter, Sitecore.DataExchange.Custom.XmlProvider
+----version----
+language: en
+version: 1
+revision: 92229dfc-7163-4d69-8dec-d9b9ee59b597
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170126T101956Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+92229dfc-7163-4d69-8dec-d9b9ee59b597
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170126T102152Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -11,6 +11,20 @@ templatekey: Read XML Nodes Pipeline Step
 created: 20170124T102554:636208503540770000
 
 ----field----
+field: {3C7F78CC-0C5C-4076-80EF-9A49FDA5FF96}
+name: ConverterType
+key: convertertype
+content-length: 133
+
+Sitecore.DataExchange.Custom.XmlProvider.Converters.PipelineSteps.ReadXmlNodesStepConverter, Sitecore.DataExchange.Custom.XmlProvider
+----field----
+field: {A83A2EB2-BFA1-4D3F-9F17-0CC6C9A91C42}
+name: ProcessorType
+key: processortype
+content-length: 133
+
+Sitecore.DataExchange.Custom.XmlProvider.Processors.PipelineSteps.ReadXmlNodesStepProcessor, Sitecore.DataExchange.Custom.XmlProvider
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -20,7 +34,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 65a369be-c35f-4c05-ad25-ba11ea0ba0b0
+revision: 9ca68ec6-e3eb-4e23-8af3-5497e034362c
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -35,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-65a369be-c35f-4c05-ad25-ba11ea0ba0b0
+9ca68ec6-e3eb-4e23-8af3-5497e034362c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170124T103749Z
+20170126T102410Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -53,8 +53,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Converters\Endpoints\XmlFileEndpointConverter.cs" />
+    <Compile Include="Converters\PipelineSteps\ReadXmlNodesStepConverter.cs" />
     <Compile Include="Extensions\EndpointExtensions.cs" />
     <Compile Include="Models\ItemModels\Endpoints\XmlFileEndpointItemModel.cs" />
+    <Compile Include="Models\PipelineSteps\ReadXmlNodesItemModel.cs" />
     <Compile Include="Plugins\XmlFileSettings.cs" />
     <Compile Include="Processors\PipelineSteps\ReadXmlNodesStepProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
