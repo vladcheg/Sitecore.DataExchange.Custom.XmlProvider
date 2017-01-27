@@ -52,10 +52,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converters\DataAccess\Readers\XmlNodeAttributeValueReaderConverter.cs" />
+    <Compile Include="Converters\DataAccess\Readers\XmlNodeValueReaderConverter.cs" />
     <Compile Include="Converters\Endpoints\XmlFileEndpointConverter.cs" />
     <Compile Include="Converters\PipelineSteps\ReadXmlNodesStepConverter.cs" />
+    <Compile Include="DataAccess\Readers\XmlAttributeValueReader.cs" />
+    <Compile Include="DataAccess\Readers\XmlNodeValueReader.cs" />
     <Compile Include="Extensions\EndpointExtensions.cs" />
     <Compile Include="Extensions\PipelineStepExtensions.cs" />
+    <Compile Include="Models\ItemModels\DataAccess\Readers\XmlNodeAttributeValueRaderItemModel.cs" />
     <Compile Include="Models\ItemModels\Endpoints\XmlFileEndpointItemModel.cs" />
     <Compile Include="Models\PipelineSteps\ReadXmlNodesItemModel.cs" />
     <Compile Include="Plugins\XmlFileSettings.cs" />
