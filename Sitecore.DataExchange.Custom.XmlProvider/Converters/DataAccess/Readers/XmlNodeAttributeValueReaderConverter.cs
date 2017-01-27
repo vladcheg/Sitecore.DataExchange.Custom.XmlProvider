@@ -18,7 +18,7 @@
         public override IValueReader Convert(ItemModel source)
         {
             var attributeName = base.GetStringValue(source, XmlNodeAttributeValueRaderItemModel.AttributeName);
-            return new XmlAttributeValueReader(attributeName);
+            return new XmlNodeAttributeValueReader(attributeName);
         }
     }
 }

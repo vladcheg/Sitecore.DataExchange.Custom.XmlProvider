@@ -3,11 +3,11 @@
     using System;
     using System.Xml;
     using DataExchange.DataAccess;
-    public class XmlAttributeValueReader : IValueReader
+    public class XmlNodeAttributeValueReader : IValueReader
     {
         public string AttributeName { get; protected set; }
 
-        public XmlAttributeValueReader(string attributeName)
+        public XmlNodeAttributeValueReader(string attributeName)
         {
             this.AttributeName = attributeName;
         }

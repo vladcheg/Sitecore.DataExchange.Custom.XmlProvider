@@ -56,7 +56,7 @@
     <Compile Include="Converters\DataAccess\Readers\XmlNodeValueReaderConverter.cs" />
     <Compile Include="Converters\Endpoints\XmlFileEndpointConverter.cs" />
     <Compile Include="Converters\PipelineSteps\ReadXmlNodesStepConverter.cs" />
-    <Compile Include="DataAccess\Readers\XmlAttributeValueReader.cs" />
+    <Compile Include="DataAccess\Readers\XmlNodeAttributeValueReader.cs" />
     <Compile Include="DataAccess\Readers\XmlNodeValueReader.cs" />
     <Compile Include="Extensions\EndpointExtensions.cs" />
     <Compile Include="Extensions\PipelineStepExtensions.cs" />
@@ -68,7 +68,9 @@
     <Compile Include="Processors\PipelineSteps\ReadXmlNodesStepProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Converters\DataAccess\ValueAccessors\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
