@@ -54,6 +54,8 @@
   <ItemGroup>
     <Compile Include="Converters\DataAccess\Readers\XmlNodeAttributeValueReaderConverter.cs" />
     <Compile Include="Converters\DataAccess\Readers\XmlNodeValueReaderConverter.cs" />
+    <Compile Include="Converters\DataAccess\ValueAccessors\XmlNodeAttributeValueAccessorConverter.cs" />
+    <Compile Include="Converters\DataAccess\ValueAccessors\XmlNodeValueAccessorConverter.cs" />
     <Compile Include="Converters\Endpoints\XmlFileEndpointConverter.cs" />
     <Compile Include="Converters\PipelineSteps\ReadXmlNodesStepConverter.cs" />
     <Compile Include="DataAccess\Readers\XmlNodeAttributeValueReader.cs" />
@@ -69,7 +71,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Converters\DataAccess\ValueAccessors\" />
+    <Folder Include="Models\ItemModels\DataAccess\ValueAccessors\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
