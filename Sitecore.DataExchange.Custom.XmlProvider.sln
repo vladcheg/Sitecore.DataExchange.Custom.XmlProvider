@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.DataExchange.Custo
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.DataExchange.Custom.XmlProvider.master", "Sitecore.DataExchange.Custom.XmlProvider.master\Sitecore.DataExchange.Custom.XmlProvider.master.scproj", "{27683299-1A71-413B-BE5F-3EE002A49FDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.DataExchange.Custom.XmlProvider.Tests", "Sitecore.DataExchange.Custom.XmlProvider.Tests\Sitecore.DataExchange.Custom.XmlProvider.Tests.csproj", "{D0117D3E-9AB7-408B-8282-8491AD407ECF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{27683299-1A71-413B-BE5F-3EE002A49FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27683299-1A71-413B-BE5F-3EE002A49FDF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{27683299-1A71-413B-BE5F-3EE002A49FDF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D0117D3E-9AB7-408B-8282-8491AD407ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0117D3E-9AB7-408B-8282-8491AD407ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0117D3E-9AB7-408B-8282-8491AD407ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0117D3E-9AB7-408B-8282-8491AD407ECF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
