@@ -1,22 +1,22 @@
 ----item----
 version: 1
-id: {4009A725-1442-4532-AF06-A9009B179A65}
+id: {AA53CAE9-64E5-42A2-BE71-CB1E7DD8CD2A}
 database: master
-path: /sitecore/templates/Data Exchange/Providers/Xml/Pipeline Steps/Read XML Nodes Pipeline Step/Filters/MaxCount
-parent: {8D8024A2-861F-40C0-8B1C-C5984E6F8788}
-name: MaxCount
+path: /sitecore/templates/Data Exchange/Providers/Xml/Data Access/Value Accessors/Xml Node Attribute Value Accessor/Data/AttributeName
+parent: {94EE8217-6A52-4400-A2A4-94D91EFDC3F5}
+name: AttributeName
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
-created: 20170124T102136:636208500963470000
+created: 20170127T165112:636211326720800000
 
 ----field----
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 7
+content-length: 16
 
-Integer
+Single-Line Text
 ----field----
 field: {BE351A73-FCB0-4213-93FA-C302D8AB4F51}
 name: Shared
@@ -30,11 +30,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-200
+100
 ----version----
 language: en
 version: 1
-revision: 366fcf83-472c-44cc-abc3-b4034731b7a1
+revision: 6ce1be23-3099-4433-9325-a3e788d6281b
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -42,21 +42,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20170124T102136Z
+20170127T165112Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-366fcf83-472c-44cc-abc3-b4034731b7a1
+6ce1be23-3099-4433-9325-a3e788d6281b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170124T103811Z
+20170127T165112Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

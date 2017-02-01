@@ -1,5 +1,7 @@
 ﻿namespace Sitecore.DataExchange.Custom.XmlProvider.Processors.PipelineSteps
 {
+    using System;
+    using System.IO;
     using System.Xml;
     using Attributes;
     using Contexts;
@@ -34,14 +36,26 @@
                 return;
             }
 
+            var path = xmlFileSettings.Path;
+            if (!Path.IsPathRooted(path))
+            {
+                path = $"{AppDomain.CurrentDomain.BaseDirectory}{path}";
+            }
+            if (!File.Exists(path))
+            {
+                logger.Error("The path specified on the endpoint does not exist. (pipeline step: {0}, endpoint: {1}, path: {2})", pipelineStep.Name, endpoint.Name, path);
+                return;
+            }
+
+
             var xmlDocument = new XmlDocument();
             try
             {
-                xmlDocument.Load(xmlFileSettings.Path);
+                xmlDocument.Load(path);
             }
-            catch (XmlException ex)
+            catch (Exception ex)
             {
-                logger.Error($"Cannot load xml file. (path: {xmlFileSettings.Path}, pipeline step: {pipelineStep.Name}, endpoint: {endpoint.Name}, errorMessage: {ex.Message})");
+                logger.Error($"Exception during loading xml file. (path: {xmlFileSettings.Path}, pipeline step: {pipelineStep.Name}, endpoint: {endpoint.Name}, errorMessage: {ex.Message})");
                 return;
             }
 

@@ -23,6 +23,7 @@
             }
 
             var attributeName = base.GetStringValue(source, "AttributeName");
+            var xpath = base.GetStringValue(source, "XPath");
             if (string.IsNullOrEmpty(attributeName))
             {
                 return null;
@@ -30,7 +31,7 @@
 
             if (accessor.ValueReader == null)
             {
-                accessor.ValueReader = new XmlNodeAttributeValueReader(attributeName);
+                accessor.ValueReader = new XmlNodeAttributeValueReader(xpath, attributeName);
             }
 
             return accessor;
