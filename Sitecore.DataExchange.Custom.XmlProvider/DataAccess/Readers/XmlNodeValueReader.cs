@@ -40,8 +40,8 @@
             {
                 var node = source as XmlNode;
                 return string.IsNullOrWhiteSpace(this.XPath)
-                    ? ReadResult.PositiveResult(node?.InnerText, DateTime.Now)
-                    : ReadResult.PositiveResult(node?.SelectSingleNode(this.XPath)?.InnerText, DateTime.Now);
+                    ? ReadResult.PositiveResult(node?.Value, DateTime.Now)
+                    : ReadResult.PositiveResult(node?.SelectSingleNode(this.XPath)?.Value, DateTime.Now);
             }
 
             return ReadResult.NegativeResult(DateTime.Now);

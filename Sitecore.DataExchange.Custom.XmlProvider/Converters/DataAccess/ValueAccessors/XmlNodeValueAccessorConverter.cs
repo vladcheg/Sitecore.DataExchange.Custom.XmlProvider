@@ -3,6 +3,7 @@
     using Attributes;
     using DataExchange.Converters.DataAccess.ValueAccessors;
     using DataExchange.DataAccess;
+    using Models.ItemModels.DataAccess.ValueAccessors;
     using Repositories;
     using Services.Core.Model;
     using XmlProvider.DataAccess.Readers;
@@ -22,7 +23,7 @@
                 return null;
             }
 
-            var xpath = base.GetStringValue(source, "XPath");
+            var xpath = base.GetStringValue(source, XmlNodeValueAccessorItemModel.XPath);
 
             if (accessor.ValueReader == null)
             {

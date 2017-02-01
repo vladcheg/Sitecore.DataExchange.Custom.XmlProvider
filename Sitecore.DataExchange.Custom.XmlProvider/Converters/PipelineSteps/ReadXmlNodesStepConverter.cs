@@ -4,9 +4,8 @@
     using DataExchange.Converters.PipelineSteps;
     using DataExchange.Models;
     using DataExchange.Plugins;
-    using Models.PipelineSteps;
+    using Models.ItemModels.PipelineSteps;
     using Plugins;
-    using Queues;
     using Repositories;
     using Services.Core.Model;
 

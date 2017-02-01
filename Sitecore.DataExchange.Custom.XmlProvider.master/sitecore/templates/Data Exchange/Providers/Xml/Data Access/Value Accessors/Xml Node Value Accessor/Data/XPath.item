@@ -1,14 +1,14 @@
 ----item----
 version: 1
-id: {AA53CAE9-64E5-42A2-BE71-CB1E7DD8CD2A}
+id: {782C4C78-074B-4446-872A-F68BED3663E4}
 database: master
-path: /sitecore/templates/Data Exchange/Providers/Xml/Data Access/Value Accessors/Xml Node Attribute Value Accessor/Data/AttributeName
-parent: {94EE8217-6A52-4400-A2A4-94D91EFDC3F5}
-name: AttributeName
+path: /sitecore/templates/Data Exchange/Providers/Xml/Data Access/Value Accessors/Xml Node Value Accessor/Data/XPath
+parent: {AA64FDCA-39CD-48E5-84E7-7FF67634AA4A}
+name: XPath
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
-created: 20170127T165112:636211326720800000
+created: 20170201T144730:636215572508370000
 
 ----field----
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
@@ -34,7 +34,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 6ce1be23-3099-4433-9325-a3e788d6281b
+revision: c01af486-6d95-477b-9ec5-0e74fa3dbaf7
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -42,21 +42,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20170127T165112Z
+20170201T144730Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-6ce1be23-3099-4433-9325-a3e788d6281b
+c01af486-6d95-477b-9ec5-0e74fa3dbaf7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170127T165112Z
+20170201T144731Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

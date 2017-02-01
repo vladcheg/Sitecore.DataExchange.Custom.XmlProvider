@@ -81,7 +81,11 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Data Exchange\Providers\Xml\Data Access\Value Accessors\Xml Node Attribute Value Accessor\Data\AttributeName.item">
+    <SitecoreItem Include="sitecore\templates\Data Exchange\Providers\Xml\Data Access\Value Accessors\Xml Node Attribute Value Accessor\Data\Attribute.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Data Exchange\Providers\Xml\Data Access\Value Accessors\Xml Node Attribute Value Accessor\Data\XPath.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
@@ -90,6 +94,14 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Data Exchange\Providers\Xml\Data Access\Value Accessors\Xml Node Value Accessor\__Standard Values.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Data Exchange\Providers\Xml\Data Access\Value Accessors\Xml Node Value Accessor\Data.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Data Exchange\Providers\Xml\Data Access\Value Accessors\Xml Node Value Accessor\Data\XPath.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
