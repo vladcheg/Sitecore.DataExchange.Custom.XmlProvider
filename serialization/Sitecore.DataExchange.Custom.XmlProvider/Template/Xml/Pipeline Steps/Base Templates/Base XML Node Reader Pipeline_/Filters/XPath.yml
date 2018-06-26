@@ -2,7 +2,7 @@
 ID: "29ba262a-97dd-4f3d-8203-4ce8c4a58917"
 Parent: "8d8024a2-861f-40c0-8b1c-c5984e6f8788"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Data Exchange/Providers/Xml/Pipeline Steps/Read XML Nodes Pipeline Step/Filters/XPath
+Path: /sitecore/templates/Data Exchange/Providers/Xml/Pipeline Steps/Base Templates/Base XML Node Reader Pipeline Step/Filters/XPath
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"

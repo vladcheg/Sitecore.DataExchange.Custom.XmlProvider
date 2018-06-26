@@ -1,0 +1,18 @@
+﻿---
+ID: "0af2723e-015c-4fae-bfa9-1fb72917bcc2"
+Parent: "8d9db889-9c4a-430c-ae9b-d21b2297daf8"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Data Exchange/Providers/Xml/Pipeline Steps/Base Templates
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180626T202823Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

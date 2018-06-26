@@ -2,7 +2,7 @@
 ID: "ba1b82a4-f0b7-4569-ba0c-d7f38603e815"
 Parent: "e328c89f-ae4b-4188-be44-a3dcef90eab8"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Data Exchange/Providers/Xml/Pipeline Steps/Read XML Nodes Pipeline Step/Endpoints/EndpointFrom
+Path: /sitecore/templates/Data Exchange/Providers/Xml/Pipeline Steps/Base Templates/Base XML Node Reader Pipeline Step/Endpoints/EndpointFrom
 DB: master
 SharedFields:
 - ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"

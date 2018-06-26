@@ -1,9 +1,13 @@
 ﻿---
-ID: "e328c89f-ae4b-4188-be44-a3dcef90eab8"
+ID: "8d8024a2-861f-40c0-8b1c-c5984e6f8788"
 Parent: "fa315be9-a96e-417d-8afb-a93a722b10c5"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Data Exchange/Providers/Xml/Pipeline Steps/Read XML Nodes Pipeline Step/Endpoints
+Path: /sitecore/templates/Data Exchange/Providers/Xml/Pipeline Steps/Base Templates/Base XML Node Reader Pipeline Step/Filters
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
 Languages:
 - Language: en
   Versions:
@@ -11,7 +15,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20170124T102030Z
+      Value: 20170124T102135Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

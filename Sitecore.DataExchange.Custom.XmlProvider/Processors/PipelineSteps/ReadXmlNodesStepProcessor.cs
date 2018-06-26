@@ -1,4 +1,6 @@
-﻿namespace Sitecore.DataExchange.Custom.XmlProvider.Processors.PipelineSteps
+﻿using Sitecore.Services.Core.Diagnostics;
+
+namespace Sitecore.DataExchange.Custom.XmlProvider.Processors.PipelineSteps
 {
     using System;
     using System.IO;
@@ -11,54 +13,27 @@
     using Extensions;
     using Plugins;
 
-    [RequiredEndpointPlugins(typeof(XmlFileSettings))]
-    [RequiredPipelineStepPlugins(typeof(XmlNodesFiltersSettings))]
-    public class ReadXmlNodesStepProcessor : BaseReadDataStepProcessor
+    public class ReadXmlNodesStepProcessor : BaseReadXmlStepProcessor
     {
-        protected override void ReadData(Endpoint endpoint, PipelineStep pipelineStep, PipelineContext pipelineContext, Sitecore.Services.Core.Diagnostics.ILogger logger)
+        protected override void ReadData(Endpoint endpoint, PipelineStep pipelineStep, PipelineContext pipelineContext, ILogger logger)
         {
-            var xmlFileSettings = endpoint.GetXmlFileSettings();
-            if (xmlFileSettings == null)
+            XmlDocument xmlDocument = base.LoadXml(endpoint, pipelineStep, pipelineContext, logger);
+            if (xmlDocument == null)
             {
-                return;
-            }
-            if (string.IsNullOrWhiteSpace(xmlFileSettings.Path))
-            {
-                logger.Error($"No path is specified on the endpoint. (pipeline step: {pipelineStep.Name}, endpoint: {endpoint.Name})");
+                pipelineContext.Finished = true;
+                logger.Error("Cannot load xml document");
                 return;
             }
 
-            var xmlNodesFiltersSettings = pipelineStep.GetXmlNodesFiltersSettings();
-            if (xmlNodesFiltersSettings == null)
+            var xpath = base.GetXpath(pipelineStep, pipelineContext);
+            if (string.IsNullOrWhiteSpace(xpath))
             {
-                //TODO: write to log
+                pipelineContext.Finished = true;
+                logger.Error("Cannot get xpath");
                 return;
             }
 
-            var path = xmlFileSettings.Path;
-            if (!Path.IsPathRooted(path))
-            {
-                path = $"{AppDomain.CurrentDomain.BaseDirectory}{path}";
-            }
-            if (!File.Exists(path))
-            {
-                logger.Error("The path specified on the endpoint does not exist. (pipeline step: {0}, endpoint: {1}, path: {2})", pipelineStep.Name, endpoint.Name, path);
-                return;
-            }
-
-
-            var xmlDocument = new XmlDocument();
-            try
-            {
-                xmlDocument.Load(path);
-            }
-            catch (Exception ex)
-            {
-                logger.Error($"Exception during loading xml file. (path: {xmlFileSettings.Path}, pipeline step: {pipelineStep.Name}, endpoint: {endpoint.Name}, errorMessage: {ex.Message})");
-                return;
-            }
-
-            var xmlNodeList = xmlDocument.SelectNodes(xmlNodesFiltersSettings.XPath);
+            var xmlNodeList = xmlDocument.SelectNodes(xpath);
             var iterableDataSettings = new IterableDataSettings(xmlNodeList);
             pipelineContext.AddPlugin(iterableDataSettings);
         }
