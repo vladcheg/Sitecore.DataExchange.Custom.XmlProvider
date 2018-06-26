@@ -1,0 +1,22 @@
+﻿---
+ID: "8cc0e572-6d88-403c-8dd9-db3e29f9fd27"
+Parent: "14096cd3-4165-4cbe-895a-d3c5201167fd"
+Template: "10c1c247-49c5-4c15-a5c6-ab56854ff5a6"
+Path: /sitecore/templates/Branches/Data Exchange/Providers/Xml/Branches/Xml Tenant Settings Root/Xml
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180626T071659Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Anonymous

@@ -1,0 +1,423 @@
+﻿---
+ID: "2be66d1c-189a-4c57-a1d4-d5b85c212fd7"
+Parent: "ff0bc016-2d01-4f55-a020-ef6fc2fe7559"
+Template: "664e5035-eb8c-4ba1-9731-a098fcc9127a"
+Path: "/sitecore/system/Settings/Rules/Insert Options/Rules/Data Exchange - Xml Provider"
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "fa307b86-da2a-44bd-887d-e2057cdb4948"
+  Hint: Rule
+  Type: Rules
+  Value: |
+    <ruleset>
+      <rule
+        uid="{D9FF38FE-0A94-4FE7-86D3-521A05699177}"
+        name="Endpoints Providers Root">
+        <conditions>
+          <and
+            uid="CE1F4AA3689846FDB370F3F2B98BBE5D">
+            <condition
+              id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+              uid="6A4BFFCB889A4342B58A671CB7F7B383"
+              templateid="{6F05FFD0-4C1B-44AE-87E5-B015E1DAC352}" />
+            <condition
+              id="{5CD2292C-32AC-4976-AA4F-A741555D22F8}"
+              uid="AD47E9A7D3094594BC32B2FFE416D884"
+              query="./*[@@templateid='{EF9AC255-F0B9-40A9-8F3C-6DD61E29223A}']"
+              except="true" />
+          </and>
+        </conditions>
+        <actions>
+          <action
+            id="{918FFCF0-F9E1-4DB6-A191-3EFA5A91C583}"
+            uid="FC4E8B53759B4FDF8AA2FA1EAC6D9EE2"
+            insertoptionid="{A156A604-A6A3-4C47-BD53-4A59C6360C38}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{1434C871-B453-4AF9-B415-95462BEA961F}"
+        name="Tenant Settings Providers Root">
+        <conditions>
+          <and
+            uid="6760BB44B4D14BA1A96A91935107884C">
+            <condition
+              id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+              uid="11292D4076DD44F795FFF844B68803D8"
+              templateid="{D6126448-E751-4A7E-AD40-7A56E20C1369}" />
+            <condition
+              id="{5CD2292C-32AC-4976-AA4F-A741555D22F8}"
+              uid="AAE27782352745FC9522FEF55C09521D"
+              query="./*[@@templateid='{8CC0E572-6D88-403C-8DD9-DB3E29F9FD27}']"
+              except="true" />
+          </and>
+        </conditions>
+        <actions>
+          <action
+            id="{918FFCF0-F9E1-4DB6-A191-3EFA5A91C583}"
+            uid="02E96DE9282E444388DF9E75C9099799"
+            insertoptionid="{C4A082FA-FDB0-4541-8A34-DE23CFE960B5}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{F077F55B-5F6B-4F93-B7E2-587DB317E4BB}"
+        name="Apply Mapping Rules Provider Root">
+        <conditions>
+          <and
+            uid="A702F44B96654F91989358BE64AD4D52">
+            <condition
+              id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+              uid="B3C90CD6E86743A6A5E0951C14B44A68"
+              templateid="{BB9CC1EB-DBA2-49C7-A6D1-EC83B3D2E1E3}" />
+            <condition
+              id="{5CD2292C-32AC-4976-AA4F-A741555D22F8}"
+              uid="5EA387AE8D85416A9710E8D09C4577F9"
+              query="./*[@@templateid='{3BC371BB-26D6-40AE-9761-090445416739}']"
+              except="true" />
+          </and>
+        </conditions>
+        <actions>
+          <action
+            id="{918FFCF0-F9E1-4DB6-A191-3EFA5A91C583}"
+            uid="2B2E3D50FCDC46EA8199A35AF1A53536"
+            insertoptionid="{4289B9E3-8EA6-4A50-BC6C-0BF3DEBC2BEF}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{B6920835-B112-4134-8C31-1CEB2E7CFEEF}"
+        name="Mappings Applied Action Rules Provider Root">
+        <conditions>
+          <and
+            uid="D2A2B5697A794457AD7F2863102EAD1C">
+            <condition
+              id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+              uid="D6373EC6079D4DCD8037C9FC0469D638"
+              templateid="{F277DB33-A198-4AD3-8AB9-92DDD8E7ADB9}" />
+            <condition
+              id="{5CD2292C-32AC-4976-AA4F-A741555D22F8}"
+              uid="081CF3AFE6B34E0CA95518262787F03E"
+              query="./*[@@templateid='{2630F815-2AE9-4FC5-A694-2073367608F0}']"
+              except="true" />
+          </and>
+        </conditions>
+        <actions>
+          <action
+            id="{918FFCF0-F9E1-4DB6-A191-3EFA5A91C583}"
+            uid="0C0B9A7AA4984198A6FF90A00A6DB2B6"
+            insertoptionid="{02D65582-D833-497D-A0B5-76FD309C3D4E}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{59C8838C-7BA8-4538-A1F0-07FD63ED643A}"
+        name="Mappings Applied Actions Provider Root">
+        <conditions>
+          <and
+            uid="146EF46AC87943F490C0A70BCE9CD0AE">
+            <condition
+              id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+              uid="3A6B2BA0D23044D180D80CB0047DFAF6"
+              templateid="{4BB18DA0-9911-4607-8A8E-32EAAC56FF80}" />
+            <condition
+              id="{5CD2292C-32AC-4976-AA4F-A741555D22F8}"
+              uid="DE242CE190334DB4AEB137DB30C8A193"
+              query="./*[@@templateid='{1369ECA1-F066-44AB-A8FD-8209A8A1BECF}']"
+              except="true" />
+          </and>
+        </conditions>
+        <actions>
+          <action
+            id="{918FFCF0-F9E1-4DB6-A191-3EFA5A91C583}"
+            uid="5D48A701F2F74C1993AF0599FA0A79E9"
+            insertoptionid="{0B9AB22C-A24F-4688-8E77-6F9BF426F20C}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{C9671D82-C2DD-415C-B185-7F48CD4147F7}"
+        name="Value Accessor Sets Providers Root">
+        <conditions>
+          <and
+            uid="4FA71365D9884ECB95223F7121C9C508">
+            <condition
+              id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+              uid="384D5E435FE846518D383F7A3313B741"
+              templateid="{BB7B0FCD-8619-4C50-A012-6BE3BB21A749}" />
+            <condition
+              id="{5CD2292C-32AC-4976-AA4F-A741555D22F8}"
+              uid="9991569812E24AF8AC8EC8ABE2B7336C"
+              query="./*[@@templateid='{D4383D3A-6549-4C5D-83C7-9B468C9EB825}']"
+              except="true" />
+          </and>
+        </conditions>
+        <actions>
+          <action
+            id="{918FFCF0-F9E1-4DB6-A191-3EFA5A91C583}"
+            uid="D16D2119DCA643A78A308F714204FA9D"
+            insertoptionid="{9D0A7C00-0C57-4188-8438-862BB0AB4AA1}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{7A29EA1D-2EFB-47A1-99D3-C4AA811E4BCF}"
+        name="Value Accessors Providers Root">
+        <conditions>
+          <and
+            uid="517ABB610C994DB78CDE605B3A0C99F5">
+            <condition
+              id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+              uid="5FBDA7E1B3F940A88D55419CBD554F17"
+              templateid="{F94CE7E1-271C-4AE9-A6BA-07C0087959D8}" />
+            <condition
+              id="{5CD2292C-32AC-4976-AA4F-A741555D22F8}"
+              uid="6E20A922242349AD83ED560E5A9D3011"
+              query="./*[@@templateid='{BD4E1EEA-2223-4082-B3C7-C253D1099276}']"
+              except="true" />
+          </and>
+        </conditions>
+        <actions>
+          <action
+            id="{918FFCF0-F9E1-4DB6-A191-3EFA5A91C583}"
+            uid="8C6AFA94DB494382BAE104B830AEF20B"
+            insertoptionid="{CD7F5BBA-44CB-4135-B937-6D37EF472F17}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{B6CE64E1-480F-4BAE-8E08-2E4861C8B2CA}"
+        name="Value Readers Providers Root">
+        <conditions>
+          <and
+            uid="79173861E2824BCEB528BCD669CE4CF5">
+            <condition
+              id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+              uid="3119461633104848820F270083692027"
+              templateid="{65F5EC7C-69FA-418F-9679-FC5FDB94B01A}" />
+            <condition
+              id="{5CD2292C-32AC-4976-AA4F-A741555D22F8}"
+              uid="DBC0F5B46104411D9F990BE2852F398E"
+              query="./*[@@templateid='{D0526941-615E-464A-9F7D-12907AB66F05}']"
+              except="true" />
+          </and>
+        </conditions>
+        <actions>
+          <action
+            id="{918FFCF0-F9E1-4DB6-A191-3EFA5A91C583}"
+            uid="51714DFF4A0A4DB993B1F874DC1F94ED"
+            insertoptionid="{F4160DB7-2BAC-41E9-B8B4-772D3ECB575D}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{8B44C33F-F4CC-40AF-A0FF-4C3ABE2497C2}"
+        name="Value Writers Providers Root">
+        <conditions>
+          <and
+            uid="ACB5F7CA495B4F808BEEFA00EA556AEC">
+            <condition
+              id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+              uid="86BFC78EF1B8495EBD195C657BE1D32F"
+              templateid="{8D195BA6-F598-44DC-915A-A0BCB2DAAFFD}" />
+            <condition
+              id="{5CD2292C-32AC-4976-AA4F-A741555D22F8}"
+              uid="7F3E707C76424E86A797FD0E0AE8F61B"
+              query="./*[@@templateid='{09928A15-25F1-49BC-8FD0-440AA94B4A91}']"
+              except="true" />
+          </and>
+        </conditions>
+        <actions>
+          <action
+            id="{918FFCF0-F9E1-4DB6-A191-3EFA5A91C583}"
+            uid="018619BAA20E42BBBCDC3A54B02ECD6E"
+            insertoptionid="{7677CC0D-0CDD-4F1E-B709-1D1C5F7F5A12}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{85FE24DE-2A2A-4A36-A56B-ED015CB3FD79}"
+        name="Endpoints">
+        <conditions>
+          <condition
+            id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+            uid="9765B957FE014B2BA13C4807EE889573"
+            templateid="{EF9AC255-F0B9-40A9-8F3C-6DD61E29223A}" />
+        </conditions>
+        <actions>
+          <action
+            id="{C00680C2-6BEF-4AE8-9F34-5D142308E6F5}"
+            uid="7F1446BE61A243BA9138043998F9E246"
+            insertoptionid="{654F1D17-D773-4E1F-BA80-FAC7725351EB}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{27F451B3-E9FC-4F73-9BD6-FD13B85EF309}"
+        name="Pipeline">
+        <conditions>
+          <condition
+            id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+            uid="A9881F0E7E1040DBA23A41FC98A778A4"
+            templateid="{2DC9C843-B841-483C-BB9B-AE0C9386404C}" />
+        </conditions>
+        <actions>
+          <action
+            id="{C00680C2-6BEF-4AE8-9F34-5D142308E6F5}"
+            uid="F0411DE2F910462CA75F4604EE655057"
+            insertoptionid="{8D9DB889-9C4A-430C-AE9B-D21B2297DAF8}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{5B405E33-DBAA-4D2D-99AA-05E6F31A2356}"
+        name="Pipeline Step Override Actions">
+        <conditions>
+          <condition
+            id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+            uid="AED0DFA946C34C1E98AAC7157666515B"
+            templateid="{7A95E094-7828-4161-950D-802A3A160ED4}" />
+        </conditions>
+        <actions>
+          <action
+            id="{C00680C2-6BEF-4AE8-9F34-5D142308E6F5}"
+            uid="7EA8CB54841945BDB3D668BA2BC6B7E0"
+            insertoptionid="{730C89FA-751F-43FE-9C50-3C448980DDC1}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{966B08DB-A54D-43F1-92D7-55DFC8E56822}"
+        name="Tenants">
+        <conditions>
+          <condition
+            id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+            uid="F1336F2D4A704D7BA366E5007C857847"
+            templateid="{E86D4A17-A00E-480E-AC36-D63C0465A3EC}" />
+        </conditions>
+        <actions>
+          <action
+            id="{C00680C2-6BEF-4AE8-9F34-5D142308E6F5}"
+            uid="53E00FC3774A493D9054BB0026E9F093"
+            insertoptionid="{4DA1D862-C1C7-426F-B1FF-C04CFD0D8E63}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{C5422942-D7E7-4C51-9CC6-3E16E73E4293}"
+        name="Apply Mapping Rules">
+        <conditions>
+          <condition
+            id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+            uid="54471C127FA94246984109D3267EDE82"
+            templateid="{3BC371BB-26D6-40AE-9761-090445416739}" />
+        </conditions>
+        <actions>
+          <action
+            id="{C00680C2-6BEF-4AE8-9F34-5D142308E6F5}"
+            uid="C4C1123A713B4B669AA0EBB5C95E2437"
+            insertoptionid="{0F94478C-BBE9-4320-BE0C-4B8BAEB15112}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{C3308D28-EE4A-49B5-B0AD-C813FE0C2374}"
+        name="Mappings Applied Action Rules">
+        <conditions>
+          <condition
+            id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+            uid="47015FE676664ECC86CF1D13E7D99C5B"
+            templateid="{2630F815-2AE9-4FC5-A694-2073367608F0}" />
+        </conditions>
+        <actions>
+          <action
+            id="{C00680C2-6BEF-4AE8-9F34-5D142308E6F5}"
+            uid="3F693F7D57ED4B7F9FBE4DE6A771EAEE"
+            insertoptionid="{75A6AC50-CBD5-47C7-B72F-ECD7097835E3}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{A503F866-BD6B-40B7-A3D2-87C5ECE2268C}"
+        name="Mappings Applied Actions">
+        <conditions>
+          <condition
+            id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+            uid="58E1B3D866984CACAB6C95F2BF684B56"
+            templateid="{1369ECA1-F066-44AB-A8FD-8209A8A1BECF}" />
+        </conditions>
+        <actions>
+          <action
+            id="{C00680C2-6BEF-4AE8-9F34-5D142308E6F5}"
+            uid="276244DD3CAC49F0ACA6A338CD46A73B"
+            insertoptionid="{B164C27E-4B07-4302-BFCF-EDCA38A704BD}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{F15998D7-2D31-4A87-AB76-7D0C15A6BDE9}"
+        name="Value Accessor Sets">
+        <conditions>
+          <condition
+            id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+            uid="1432DF4297C248AB81AA507EDD273BA8"
+            templateid="{D4383D3A-6549-4C5D-83C7-9B468C9EB825}" />
+        </conditions>
+        <actions>
+          <action
+            id="{C00680C2-6BEF-4AE8-9F34-5D142308E6F5}"
+            uid="E43B8CE8D0DD4244BA4A44384A6D60F1"
+            insertoptionid="{34FD5CE9-E381-4993-9334-683138AAC15F}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{48AFCC2D-7773-4089-92E4-E050843EA9D3}"
+        name="Value Accessors">
+        <conditions>
+          <condition
+            id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+            uid="4AC189C972574647ACB3A0ACEA0EA10C"
+            templateid="{BD4E1EEA-2223-4082-B3C7-C253D1099276}" />
+        </conditions>
+        <actions>
+          <action
+            id="{C00680C2-6BEF-4AE8-9F34-5D142308E6F5}"
+            uid="E06FA45A3FB942B29DC923B3DBC213B5"
+            insertoptionid="{174ABFD6-E754-4B70-86CD-5DACCD7456C3}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{EC77F9F0-E532-4155-98FD-37AF381C8BAE}"
+        name="Value Readers">
+        <conditions>
+          <condition
+            id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+            uid="B97CB41D41344EC9A28E35AAD1D0601A"
+            templateid="{D0526941-615E-464A-9F7D-12907AB66F05}" />
+        </conditions>
+        <actions>
+          <action
+            id="{C00680C2-6BEF-4AE8-9F34-5D142308E6F5}"
+            uid="06C50AD12B8E433D84BBF1F0666DB059"
+            insertoptionid="{AC05666A-448B-4FCC-B4E8-5B7CF722056D}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{15DF0E49-10C0-4772-9804-720E4EBEA200}"
+        name="Value Writers">
+        <conditions>
+          <condition
+            id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+            uid="2A38B8D9BF764659ACF855A60D2B6503"
+            templateid="{09928A15-25F1-49BC-8FD0-440AA94B4A91}" />
+        </conditions>
+        <actions>
+          <action
+            id="{C00680C2-6BEF-4AE8-9F34-5D142308E6F5}"
+            uid="BE58FF66CDB34336B33196970F0E1F17"
+            insertoptionid="{9C84F5E3-DEF6-447D-951B-AF8A0A4156DB}" />
+        </actions>
+      </rule>
+    </ruleset>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180626T071700Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Anonymous
+    - ID: "9e0287d9-af90-41ad-8d36-332375e194d6"
+      Hint: Name
+      Value: "Add insert options for the Data Exchange - Xml Provider provider for the Data Exchange Framework"

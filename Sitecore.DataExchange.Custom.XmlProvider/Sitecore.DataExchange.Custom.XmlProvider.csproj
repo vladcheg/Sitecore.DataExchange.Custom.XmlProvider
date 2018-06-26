@@ -32,16 +32,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Sitecore.DataExchange">
-      <HintPath>..\..\..\wwwroot\dataexchange\Website\bin\Sitecore.DataExchange.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\inetpub\wwwroot\defxml\Website\bin\Sitecore.DataExchange.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.DataExchange.DataAccess">
-      <HintPath>..\..\..\wwwroot\dataexchange\Website\bin\Sitecore.DataExchange.DataAccess.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\inetpub\wwwroot\defxml\Website\bin\Sitecore.DataExchange.DataAccess.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Services.Core">
-      <HintPath>..\..\..\wwwroot\dataexchange\Website\bin\Sitecore.Services.Core.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\inetpub\wwwroot\defxml\Website\bin\Sitecore.Services.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -73,7 +70,6 @@
     <Compile Include="Processors\PipelineSteps\ReadXmlNodesStepProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

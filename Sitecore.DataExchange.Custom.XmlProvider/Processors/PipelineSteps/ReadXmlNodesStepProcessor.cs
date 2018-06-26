@@ -15,9 +15,8 @@
     [RequiredPipelineStepPlugins(typeof(XmlNodesFiltersSettings))]
     public class ReadXmlNodesStepProcessor : BaseReadDataStepProcessor
     {
-        protected override void ReadData(Endpoint endpoint, PipelineStep pipelineStep, PipelineContext pipelineContext)
+        protected override void ReadData(Endpoint endpoint, PipelineStep pipelineStep, PipelineContext pipelineContext, Sitecore.Services.Core.Diagnostics.ILogger logger)
         {
-            var logger = pipelineContext.PipelineBatchContext.Logger;
             var xmlFileSettings = endpoint.GetXmlFileSettings();
             if (xmlFileSettings == null)
             {
@@ -61,7 +60,7 @@
 
             var xmlNodeList = xmlDocument.SelectNodes(xmlNodesFiltersSettings.XPath);
             var iterableDataSettings = new IterableDataSettings(xmlNodeList);
-            pipelineContext.Plugins.Add(iterableDataSettings);
+            pipelineContext.AddPlugin(iterableDataSettings);
         }
     }
 }

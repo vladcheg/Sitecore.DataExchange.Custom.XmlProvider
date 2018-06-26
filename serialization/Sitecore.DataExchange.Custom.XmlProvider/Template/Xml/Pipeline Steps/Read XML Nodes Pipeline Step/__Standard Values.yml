@@ -1,0 +1,24 @@
+﻿---
+ID: "2b10612b-da53-4c56-8d33-44fc03b2c58a"
+Parent: "fa315be9-a96e-417d-8afb-a93a722b10c5"
+Template: "fa315be9-a96e-417d-8afb-a93a722b10c5"
+Path: /sitecore/templates/Data Exchange/Providers/Xml/Pipeline Steps/Read XML Nodes Pipeline Step/__Standard Values
+DB: master
+SharedFields:
+- ID: "3c7f78cc-0c5c-4076-80ef-9a49fda5ff96"
+  Hint: ConverterType
+  Value: Sitecore.DataExchange.Custom.XmlProvider.Converters.PipelineSteps.ReadXmlNodesStepConverter, Sitecore.DataExchange.Custom.XmlProvider
+- ID: "a83a2eb2-bfa1-4d3f-9f17-0cc6c9a91c42"
+  Hint: ProcessorType
+  Value: Sitecore.DataExchange.Custom.XmlProvider.Processors.PipelineSteps.ReadXmlNodesStepProcessor, Sitecore.DataExchange.Custom.XmlProvider
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170124T102554Z

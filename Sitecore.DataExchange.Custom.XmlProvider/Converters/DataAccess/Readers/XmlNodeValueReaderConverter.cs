@@ -9,15 +9,15 @@
 
     
     [SupportedIds("{7BC635A0-F17D-4101-81D4-621D4C37DCD0}")]
-    public class XmlNodeValueReaderConverter : BaseItemModelConverter<ItemModel, IValueReader>
+    public class XmlNodeValueReaderConverter : BaseItemModelConverter<IValueReader>
     {
         public XmlNodeValueReaderConverter(IItemModelRepository repository) : base(repository)
         {
         }
 
-        public override IValueReader Convert(ItemModel source)
+        protected override ConvertResult<IValueReader> ConvertSupportedItem(ItemModel source)
         {
-            return new XmlNodeValueReader();
+            return ConvertResult<IValueReader>.PositiveResult(new XmlNodeValueReader());
         }
     }
 }

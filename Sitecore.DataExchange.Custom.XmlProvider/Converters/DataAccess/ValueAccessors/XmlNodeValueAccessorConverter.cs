@@ -15,22 +15,9 @@
         {
         }
 
-        public override IValueAccessor Convert(ItemModel source)
+        protected override IValueReader GetValueReader(ItemModel source)
         {
-            var accessor = base.Convert(source);
-            if (accessor == null)
-            {
-                return null;
-            }
-
-            var xpath = base.GetStringValue(source, XmlNodeValueAccessorItemModel.XPath);
-
-            if (accessor.ValueReader == null)
-            {
-                accessor.ValueReader = new XmlNodeValueReader(xpath);
-            }
-
-            return accessor;
+            return base.GetValueReader(source) ?? new XmlNodeValueReader(base.GetStringValue(source, XmlNodeValueAccessorItemModel.XPath));
         }
     }
 }

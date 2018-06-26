@@ -18,25 +18,25 @@
             this.XPath = xpath;
         }
 
-        public CanReadResult CanRead(object source, DataAccessContext context)
+        public virtual bool CanRead(object source, DataAccessContext context)
         {
             var node = source as XmlNode;
             if (node != null && string.IsNullOrWhiteSpace(this.XPath))
             {
-                return new CanReadResult() {CanReadValue = true};
+                return true;
             }
 
             if (node?.SelectSingleNode(this.XPath) != null)
             {
-                return new CanReadResult() {CanReadValue = true};
+                return true;
             }
 
-            return new CanReadResult();
+            return false;
         }
 
         public ReadResult Read(object source, DataAccessContext context)
         {
-            if (this.CanRead(source, context).CanReadValue)
+            if (this.CanRead(source, context))
             {
                 var node = source as XmlNode;
                 return string.IsNullOrWhiteSpace(this.XPath)

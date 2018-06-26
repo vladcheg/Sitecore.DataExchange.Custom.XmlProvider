@@ -1,0 +1,18 @@
+﻿---
+ID: "cdf04da5-88d1-4d27-a3d5-092077b32c14"
+Parent: "d0526941-615e-464a-9f7d-12907ab66f05"
+Template: "d0526941-615e-464a-9f7d-12907ab66f05"
+Path: /sitecore/templates/Data Exchange/Providers/Xml/Folders/Xml Value Readers Root/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180626T071659Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Anonymous

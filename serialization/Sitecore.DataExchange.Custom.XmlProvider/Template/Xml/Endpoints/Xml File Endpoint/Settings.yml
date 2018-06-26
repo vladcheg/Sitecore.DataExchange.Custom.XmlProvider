@@ -1,0 +1,18 @@
+﻿---
+ID: "7d7144c7-4170-42cf-9f3c-e823b7413469"
+Parent: "391516d3-be29-4985-a630-8c6242c5a119"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Data Exchange/Providers/Xml/Endpoints/Xml File Endpoint/Settings
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170126T101825Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

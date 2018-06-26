@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.DataExchange.Custom.XmlProvider", "Sitecore.DataExchange.Custom.XmlProvider\Sitecore.DataExchange.Custom.XmlProvider.csproj", "{A6C58C65-C7E9-420E-A605-09E437DC895A}"
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.DataExchange.Custom.XmlProvider.master", "Sitecore.DataExchange.Custom.XmlProvider.master\Sitecore.DataExchange.Custom.XmlProvider.master.scproj", "{27683299-1A71-413B-BE5F-3EE002A49FDF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.DataExchange.Custom.XmlProvider.Tests", "Sitecore.DataExchange.Custom.XmlProvider.Tests\Sitecore.DataExchange.Custom.XmlProvider.Tests.csproj", "{D0117D3E-9AB7-408B-8282-8491AD407ECF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.DataExchange.Custom.XmlProvider.Serialization", "Sitecore.DataExchange.Custom.XmlProvider.Serialization\Sitecore.DataExchange.Custom.XmlProvider.Serialization.csproj", "{4C777439-EFAE-4D21-8DB9-B64FDC70C952}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,8 +31,15 @@ Global
 		{D0117D3E-9AB7-408B-8282-8491AD407ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0117D3E-9AB7-408B-8282-8491AD407ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0117D3E-9AB7-408B-8282-8491AD407ECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C777439-EFAE-4D21-8DB9-B64FDC70C952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C777439-EFAE-4D21-8DB9-B64FDC70C952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C777439-EFAE-4D21-8DB9-B64FDC70C952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C777439-EFAE-4D21-8DB9-B64FDC70C952}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B18FB590-1DF7-4B9E-B42B-000FFC82BA3C}
 	EndGlobalSection
 EndGlobal

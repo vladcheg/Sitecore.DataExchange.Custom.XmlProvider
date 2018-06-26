@@ -15,27 +15,11 @@
         {
         }
 
-        public override IValueAccessor Convert(ItemModel source)
+        protected override IValueReader GetValueReader(ItemModel source)
         {
-            var accessor = base.Convert(source);
-            if (accessor == null)
-            {
-                return null;
-            }
-
-            var attributeName = base.GetStringValue(source, XmlNodeAttributeValueAccessorItemModel.Attribute);
-            var xpath = base.GetStringValue(source, XmlNodeAttributeValueAccessorItemModel.XPath);
-            if (string.IsNullOrEmpty(attributeName))
-            {
-                return null;
-            }
-
-            if (accessor.ValueReader == null)
-            {
-                accessor.ValueReader = new XmlNodeAttributeValueReader(xpath, attributeName);
-            }
-
-            return accessor;
+            return base.GetValueReader(source) ?? new XmlNodeAttributeValueReader(
+                       base.GetStringValue(source, XmlNodeAttributeValueAccessorItemModel.XPath),
+                       base.GetStringValue(source, XmlNodeAttributeValueAccessorItemModel.Attribute));
         }
     }
 }

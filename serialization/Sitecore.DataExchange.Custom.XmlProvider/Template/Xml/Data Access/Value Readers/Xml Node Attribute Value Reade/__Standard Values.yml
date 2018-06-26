@@ -1,0 +1,18 @@
+﻿---
+ID: "c06d52ae-9d87-4670-8a98-c1f0b8218d49"
+Parent: "975a2a0f-f270-466b-a61c-2684826094b0"
+Template: "975a2a0f-f270-466b-a61c-2684826094b0"
+Path: /sitecore/templates/Data Exchange/Providers/Xml/Data Access/Value Readers/Xml Node Attribute Value Reader/__Standard Values
+DB: master
+SharedFields:
+- ID: "3c7f78cc-0c5c-4076-80ef-9a49fda5ff96"
+  Hint: ConverterType
+  Value: Sitecore.DataExchange.Custom.XmlProvider.Converters.DataAccess.Readers.XmlNodeAttributeValueReaderConverter, Sitecore.DataExchange.Custom.XmlProvider
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170127T141433Z

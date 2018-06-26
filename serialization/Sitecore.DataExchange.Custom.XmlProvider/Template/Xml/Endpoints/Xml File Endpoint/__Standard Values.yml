@@ -1,0 +1,18 @@
+﻿---
+ID: "b4218fea-a9e2-46eb-9c73-e47756a76fb3"
+Parent: "391516d3-be29-4985-a630-8c6242c5a119"
+Template: "391516d3-be29-4985-a630-8c6242c5a119"
+Path: /sitecore/templates/Data Exchange/Providers/Xml/Endpoints/Xml File Endpoint/__Standard Values
+DB: master
+SharedFields:
+- ID: "3c7f78cc-0c5c-4076-80ef-9a49fda5ff96"
+  Hint: ConverterType
+  Value: Sitecore.DataExchange.Custom.XmlProvider.Converters.Endpoints.XmlFileEndpointConverter, Sitecore.DataExchange.Custom.XmlProvider
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170126T101956Z

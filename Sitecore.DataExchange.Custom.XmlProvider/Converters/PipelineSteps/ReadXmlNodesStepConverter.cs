@@ -1,4 +1,6 @@
-﻿namespace Sitecore.DataExchange.Custom.XmlProvider.Converters.PipelineSteps
+﻿using Sitecore.DataExchange.Extensions;
+
+namespace Sitecore.DataExchange.Custom.XmlProvider.Converters.PipelineSteps
 {
     using Attributes;
     using DataExchange.Converters.PipelineSteps;
@@ -10,7 +12,7 @@
     using Services.Core.Model;
 
     [SupportedIds("{FA315BE9-A96E-417D-8AFB-A93A722B10C5}")]
-    public class ReadXmlNodesStepConverter : BasePipelineStepConverter<ItemModel>
+    public class ReadXmlNodesStepConverter : BasePipelineStepConverter
     {
         public ReadXmlNodesStepConverter(IItemModelRepository repository) : base(repository)
         {
@@ -29,8 +31,7 @@
             };
 
 
-            pipelineStep.Plugins.Add(endpointSettings);
-            pipelineStep.Plugins.Add(xmlNodesFiltersSettings);
+            pipelineStep.AddPlugins(endpointSettings, xmlNodesFiltersSettings);
         }
     }
 }

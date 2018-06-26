@@ -9,16 +9,17 @@
     using XmlProvider.DataAccess.Readers;
 
     [SupportedIds("{975A2A0F-F270-466B-A61C-2684826094B0}")]
-    public class XmlNodeAttributeValueReaderConverter : BaseItemModelConverter<ItemModel, IValueReader>
+    public class XmlNodeAttributeValueReaderConverter : BaseItemModelConverter<IValueReader>
     {
         public XmlNodeAttributeValueReaderConverter(IItemModelRepository repository) : base(repository)
         {
         }
 
-        public override IValueReader Convert(ItemModel source)
+
+        protected override ConvertResult<IValueReader> ConvertSupportedItem(ItemModel source)
         {
             var attributeName = base.GetStringValue(source, XmlNodeAttributeValueRaderItemModel.AttributeName);
-            return new XmlNodeAttributeValueReader(attributeName);
+            return ConvertResult<IValueReader>.PositiveResult(new XmlNodeAttributeValueReader(attributeName));
         }
     }
 }
