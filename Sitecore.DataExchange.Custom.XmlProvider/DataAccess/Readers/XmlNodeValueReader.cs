@@ -18,33 +18,16 @@
             this.XPath = xpath;
         }
 
-        public virtual bool CanRead(object source, DataAccessContext context)
-        {
-            var node = source as XmlNode;
-            if (node != null && string.IsNullOrWhiteSpace(this.XPath))
-            {
-                return true;
-            }
-
-            if (node?.SelectSingleNode(this.XPath) != null)
-            {
-                return true;
-            }
-
-            return false;
-        }
-
         public ReadResult Read(object source, DataAccessContext context)
         {
-            if (this.CanRead(source, context))
+            if (!(source is XmlNode xmlNode))
             {
-                var node = source as XmlNode;
-                return string.IsNullOrWhiteSpace(this.XPath)
-                    ? ReadResult.PositiveResult(node?.Value, DateTime.Now)
-                    : ReadResult.PositiveResult(node?.SelectSingleNode(this.XPath)?.Value, DateTime.Now);
+                return ReadResult.NegativeResult(DateTime.Now);
             }
 
-            return ReadResult.NegativeResult(DateTime.Now);
+            return string.IsNullOrWhiteSpace(this.XPath)
+                    ? ReadResult.PositiveResult(xmlNode?.Value, DateTime.Now)
+                    : ReadResult.PositiveResult(xmlNode?.SelectSingleNode(this.XPath)?.InnerText, DateTime.Now);
         }
     }
 }

@@ -34,6 +34,11 @@ namespace Sitecore.DataExchange.Custom.XmlProvider.Processors.PipelineSteps
             }
 
             var xmlNodeList = xmlDocument.SelectNodes(xpath);
+            if (xmlNodeList != null)
+            {
+                logger.Info($"XML Nodes were read. (count: {xmlNodeList.Count}; pipeline: {pipelineContext.CurrentPipeline.Name}; pipline step: {pipelineStep.Name})");
+            }
+
             var iterableDataSettings = new IterableDataSettings(xmlNodeList);
             pipelineContext.AddPlugin(iterableDataSettings);
         }

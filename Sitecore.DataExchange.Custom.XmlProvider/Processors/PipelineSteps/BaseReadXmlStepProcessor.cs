@@ -55,7 +55,7 @@ namespace Sitecore.DataExchange.Custom.XmlProvider.Processors.PipelineSteps
             XmlDocument xmlDocument = new XmlDocument();
             try
             {
-                xmlDocument.LoadXml(path);
+                xmlDocument.Load(path);
             }
             catch (Exception ex)
             {
