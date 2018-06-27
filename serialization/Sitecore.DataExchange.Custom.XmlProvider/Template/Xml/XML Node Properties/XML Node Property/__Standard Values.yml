@@ -1,0 +1,18 @@
+﻿---
+ID: "df1d0459-283b-42c8-923d-ca64a89c53bd"
+Parent: "8d3542ed-da75-4cef-a974-249e623fc5cd"
+Template: "8d3542ed-da75-4cef-a974-249e623fc5cd"
+Path: /sitecore/templates/Data Exchange/Providers/Xml/XML Node Properties/XML Node Property/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180627T084540Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

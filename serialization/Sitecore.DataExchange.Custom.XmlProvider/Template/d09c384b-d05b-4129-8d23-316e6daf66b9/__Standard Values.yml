@@ -1,0 +1,14 @@
+﻿---
+ID: "becd7524-836a-40d5-b565-e7162fcea31a"
+Parent: "d09c384b-d05b-4129-8d23-316e6daf66b9"
+Template: "d09c384b-d05b-4129-8d23-316e6daf66b9"
+Path: /sitecore/templates/Data Exchange/Providers/Xml/Data Access/Value Accessors/Base Templates/Base XPath XML Value Accessor/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180627T153700Z

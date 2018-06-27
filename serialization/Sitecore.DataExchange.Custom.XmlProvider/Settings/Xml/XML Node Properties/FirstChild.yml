@@ -1,0 +1,14 @@
+﻿---
+ID: "f0d98445-9dc6-4894-894c-e0dcb6aaabce"
+Parent: "8c208630-b2da-42c1-a84c-70fbcaa40384"
+Template: "8d3542ed-da75-4cef-a974-249e623fc5cd"
+Path: /sitecore/system/Settings/Data Exchange/Providers/Xml/XML Node Properties/FirstChild
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180627T085137Z

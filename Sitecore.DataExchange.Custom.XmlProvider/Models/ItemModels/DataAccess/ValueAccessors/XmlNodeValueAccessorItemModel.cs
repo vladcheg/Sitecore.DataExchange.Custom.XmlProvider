@@ -4,5 +4,6 @@
     public class XmlNodeValueAccessorItemModel : ItemModel
     {
         public const string XPath = "XPath";
+        public const string Property = "Property";
     }
 }

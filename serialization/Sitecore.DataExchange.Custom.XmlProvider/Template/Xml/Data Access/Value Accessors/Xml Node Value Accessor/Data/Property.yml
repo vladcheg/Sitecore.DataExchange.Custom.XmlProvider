@@ -1,16 +1,19 @@
 ﻿---
-ID: "782c4c78-074b-4446-872a-f68bed3663e4"
+ID: "c6275ecf-54d9-4865-b859-9cfe1ebaa8fb"
 Parent: "aa64fdca-39cd-48e5-84e7-7ff67634aa4a"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Data Exchange/Providers/Xml/Data Access/Value Accessors/Xml Node Value Accessor/Data/XPath
+Path: /sitecore/templates/Data Exchange/Providers/Xml/Data Access/Value Accessors/Xml Node Value Accessor/Data/Property
 DB: master
 SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: "{8C208630-B2DA-42C1-A84C-70FBCAA40384}"
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
-  Value: "Single-Line Text"
+  Value: Droplist
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 100
+  Value: 200
 - ID: "be351a73-fcb0-4213-93fa-c302d8ab4f51"
   Hint: Shared
   Type: Checkbox
@@ -20,10 +23,10 @@ Languages:
   Fields:
   - ID: "9541e67d-ce8c-4225-803d-33f7f29f09ef"
     Hint: __Short description
-    Value: XML XPath
+    Value: XML Node property name. if not set, XML Node reads itself
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20170201T144730Z
+      Value: 20180627T084012Z

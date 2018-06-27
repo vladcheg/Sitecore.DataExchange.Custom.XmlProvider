@@ -17,7 +17,9 @@
 
         protected override IValueReader GetValueReader(ItemModel source)
         {
-            return base.GetValueReader(source) ?? new XmlNodeValueReader(base.GetStringValue(source, XmlNodeValueAccessorItemModel.XPath));
+            return base.GetValueReader(source) ?? new XmlNodeValueReader(
+                       base.GetStringValue(source, XmlNodeValueAccessorItemModel.XPath), 
+                       base.GetStringValue(source, XmlNodeValueAccessorItemModel.Property));
         }
     }
 }

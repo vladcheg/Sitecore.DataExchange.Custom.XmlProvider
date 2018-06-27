@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "3c7f78cc-0c5c-4076-80ef-9a49fda5ff96"
   Hint: ConverterType
-  Value: Sitecore.DataExchange.Custom.XmlProvider.Converters.DataAccess.Readers.XmlNodeValueReaderConverter, Sitecore.DataExchange.Custom.XmlProvider
+  Value: Sitecore.DataExchange.Custom.XmlProvider.DataAccess.Readers.XmlNodeValueReaderConverter, Sitecore.DataExchange.Custom.XmlProvider
 Languages:
 - Language: en
   Versions:

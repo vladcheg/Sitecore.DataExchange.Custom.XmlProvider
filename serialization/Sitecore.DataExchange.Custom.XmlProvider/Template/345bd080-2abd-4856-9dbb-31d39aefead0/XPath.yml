@@ -1,8 +1,8 @@
 ﻿---
-ID: "782c4c78-074b-4446-872a-f68bed3663e4"
-Parent: "aa64fdca-39cd-48e5-84e7-7ff67634aa4a"
+ID: "4a7d73ab-705a-467e-8a6a-ccc1946edb6b"
+Parent: "345bd080-2abd-4856-9dbb-31d39aefead0"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Data Exchange/Providers/Xml/Data Access/Value Accessors/Xml Node Value Accessor/Data/XPath
+Path: /sitecore/templates/Data Exchange/Providers/Xml/Data Access/Value Accessors/Base Templates/Base XPath XML Value Accessor/Data/XPath
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
@@ -26,4 +26,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20170201T144730Z
+      Value: 20180627T154121Z

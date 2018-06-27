@@ -51,11 +51,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Converters\DataAccess\Readers\XmlNodeAttributeValueReaderConverter.cs" />
-    <Compile Include="Converters\DataAccess\Readers\XmlNodeValueReaderConverter.cs" />
+    <Compile Include="Converters\DataAccess\ValueAccessors\XmlNodesValueAccessorConverter.cs" />
+    <Compile Include="DataAccess\Readers\XmlNodeAttributeValueReaderConverter.cs" />
+    <Compile Include="DataAccess\Readers\XmlNodesValueReader.cs" />
+    <Compile Include="DataAccess\Readers\XmlNodeValueReaderConverter.cs" />
     <Compile Include="Converters\DataAccess\ValueAccessors\XmlNodeAttributeValueAccessorConverter.cs" />
     <Compile Include="Converters\DataAccess\ValueAccessors\XmlNodeValueAccessorConverter.cs" />
     <Compile Include="Converters\Endpoints\XmlFileEndpointConverter.cs" />
+    <Compile Include="DataAccess\Readers\BaseXmlXpathValueReader.cs" />
     <Compile Include="Processors\PipelineSteps\BaseReadXmlStepProcessor.cs" />
     <Compile Include="Processors\PipelineSteps\ReadXmlNodesStepConverter.cs" />
     <Compile Include="DataAccess\Readers\XmlNodeAttributeValueReader.cs" />
@@ -74,6 +77,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Converters\DataAccess\Readers\" />
     <Folder Include="Converters\PipelineSteps\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
